@@ -1,12 +1,13 @@
 <?php
 namespace Aura\Cli_Kernel\_Config;
 
-use Aura\Di\Config;
+use Aura\Di\AbstractContainerConfigTest;
 use Aura\Di\Container;
+use Aura\Di\ContainerConfig;
 
-class CliKernelTest extends Config
+class CliKernelTest extends ContainerConfig
 {
-    public function define(Container $di)
+    public function define(Container $di): void
     {
         $di->params['Aura\Cli\Stdio'] = array(
             'stdin' => $di->lazyNew('Aura\Cli\Stdio\Handle', array(
@@ -25,7 +26,7 @@ class CliKernelTest extends Config
         );
     }
 
-    public function modify(Container $di)
+    public function modify(Container $di): void
     {
         $dispatcher = $di->get('aura/cli-kernel:dispatcher');
         $stdio = $di->get('aura/cli-kernel:stdio');

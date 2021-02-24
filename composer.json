@@ -14,10 +14,20 @@
             "homepage": "https://github.com/auraphp/Aura.Cli_Kernel/contributors"
         }
     ],
+    "repositories": [
+        {
+            "type":"vcs",
+            "url": "git@github.com:kumamidori/Aura.Project_Kernel.git"
+        },
+        {
+            "type":"vcs",
+            "url": "git@github.com:kumamidori/Aura.Cli.git"
+        }
+    ],
     "require": {
         "php": ">=7.2.0",
-        "aura/project-kernel": "~2.0",
-        "aura/cli": "~2.0",
+        "aura/project-kernel": "dev-feature/php74_20210223",
+        "aura/cli": "dev-feature/3.x",
         "aura/dispatcher": "~2.0"
     },
     "autoload": {

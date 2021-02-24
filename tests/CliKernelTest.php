@@ -20,7 +20,7 @@ class CliKernelTest extends TestCase
         $this->cli_kernel = (new Factory)->newKernel(
             dirname(__DIR__),
             'Aura\Cli_Kernel\CliKernel',
-            ContainerBuilder::DISABLE_AUTO_RESOLVE
+            ContainerBuilder::AUTO_RESOLVE
         );
 
         $this->status = $this->cli_kernel->__invoke();
