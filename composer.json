@@ -15,7 +15,7 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=7.2.0",
         "aura/project-kernel": "~2.0",
         "aura/cli": "~2.0",
         "aura/dispatcher": "~2.0"
@@ -40,5 +40,8 @@
             "Aura\\Cli_Kernel\\": "tests/",
             "Aura\\Di\\": "vendor/aura/di/tests/"
         }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
     }
 }

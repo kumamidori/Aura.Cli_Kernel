@@ -6,7 +6,7 @@ This is a kernel for the [Aura.Cli_Project](https://github.com/auraphp/Aura.Cli_
 
 ### Requirements
 
-This kernel requires PHP 5.4 or later; we recommend using the latest available version of PHP as a matter of principle.
+This kernel requires PHP 7.2 or later; we recommend using the latest available version of PHP as a matter of principle.
 
 Unlike Aura library packages, this kernel package has userland dependencies, which themselves may have other dependencies:
 

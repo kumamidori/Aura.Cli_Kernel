@@ -4,8 +4,9 @@ namespace Aura\Cli_Kernel;
 use Aura\Di\ContainerBuilder;
 use Aura\Cli\Status;
 use Aura\Project_Kernel\Factory;
+use PHPUnit\Framework\TestCase;
 
-class CliKernelTest extends \PHPUnit_Framework_TestCase
+class CliKernelTest extends TestCase
 {
     protected $cli_kernel;
 
