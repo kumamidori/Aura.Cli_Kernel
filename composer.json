@@ -14,9 +14,15 @@
             "homepage": "https://github.com/auraphp/Aura.Cli_Kernel/contributors"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:kumamidori/Aura.Project_Kernel.git"
+        }
+    ],
     "require": {
         "php": ">=5.4.0",
-        "aura/project-kernel": "~2.0",
+        "aura/project-kernel": "dev-feature/sixcare_hotfix_2.1.2",
         "aura/cli": "~2.0",
         "aura/dispatcher": "~2.0"
     },
